@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="United With Heaven — hosting the presence of God, awakening the church, and seeing heaven's reality manifest on earth.">
+  <title>United With Heaven</title>
+
+  <!-- Fonts: Cormorant Garamond + Cinzel + Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700;900&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#" class="nav__logo" aria-label="United With Heaven home">
+        <span class="nav__logo-icon">✦ </span>United With Heaven
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#mission"    class="nav__link">Mission</a></li>
+        <li><a href="#teaching"   class="nav__link">Teaching</a></li>
+        <li><a href="#music"      class="nav__link">Music</a></li>
+        <li><a href="#devotional" class="nav__link">Devotional</a></li>
+        <li><a href="#books"      class="nav__link">Resources</a></li>
+        <li><a href="#community"  class="nav__link nav__link--cta">Join Us</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav id="drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#mission"    onclick="closeDrawer()">Mission</a>
+    <a href="#teaching"   onclick="closeDrawer()">Teaching</a>
+    <a href="#music"      onclick="closeDrawer()">Music</a>
+    <a href="#devotional" onclick="closeDrawer()">Devotional</a>
+    <a href="#books"      onclick="closeDrawer()">Resources</a>
+    <a href="#community"  onclick="closeDrawer()">Join Us</a>
+  </nav>
+  <div id="overlay" aria-hidden="true"></div>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO — 2-column portrait layout
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-labelledby="heroTitle">
+    <div class="container hero__container">
+
+      <div class="hero__content">
+        <p class="hero__eyebrow label reveal">— A House of Prayer &amp; Revelation —</p>
+        <h1 class="hero__title reveal" id="heroTitle">
+          United With<br><em>Heaven</em>
+        </h1>
+        <p class="hero__sub reveal">
+          Where earth meets the eternal. Enter the presence, the power, and the purpose of God.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#mission"   class="btn btn--primary">Begin the Journey</a>
+          <a href="#community" class="btn btn--ghost">Our Community</a>
+        </div>
+      </div>
+
+      <div class="hero__image reveal">
+        <div class="portrait-outer">
+          <div class="portrait-frame">
+            <div class="portrait-wrap">
+              <img src="images/hero-doors.png" alt="United With Heaven" loading="eager">
+            </div>
+          </div>
+          <p class="portrait-caption">Imashi Weerasinghe &mdash; United With Heaven</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       MISSION STRIP
+  ═══════════════════════════════════════════ -->
+  <section class="mission-strip" id="mission" aria-labelledby="missionQuote">
+    <div class="container">
+      <p class="mission-strip__quote reveal" id="missionQuote">
+        We exist to host the presence of God, awaken the church,
+        and see heaven's reality manifest on earth.
+      </p>
+
+      <div class="mission-strip__pillars reveal" role="list">
+        <div class="pillar" role="listitem">
+          <span class="pillar__icon" aria-hidden="true">✦</span>
+          <span class="pillar__label">Presence</span>
+        </div>
+        <div class="pillar__divider" aria-hidden="true"></div>
+        <div class="pillar" role="listitem">
+          <span class="pillar__icon" aria-hidden="true">✦</span>
+          <span class="pillar__label">Prayer</span>
+        </div>
+        <div class="pillar__divider" aria-hidden="true"></div>
+        <div class="pillar" role="listitem">
+          <span class="pillar__icon" aria-hidden="true">✦</span>
+          <span class="pillar__label">Revelation</span>
+        </div>
+        <div class="pillar__divider" aria-hidden="true"></div>
+        <div class="pillar" role="listitem">
+          <span class="pillar__icon" aria-hidden="true">✦</span>
+          <span class="pillar__label">Mission</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTENT PILLARS
+  ═══════════════════════════════════════════ -->
+  <section class="pillars-section section" id="teaching" aria-labelledby="pillarsTitle">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Carry</span>
+        <h2 id="pillarsTitle">Built on Four <em>Foundations</em></h2>
+        <div class="divider"></div>
+        <p class="section-sub">Everything we do flows from these four non-negotiable commitments to God and his kingdom.</p>
+      </div>
+
+      <div class="pillars-grid">
+
+        <article class="pillar-card reveal" aria-labelledby="pillarTeaching">
+          <p class="pillar-num">01</p>
+          <h3 class="pillar-card__title" id="pillarTeaching">Teaching &amp; Revelation</h3>
+          <p class="pillar-card__body">
+            Deep, revelatory teaching that transforms minds and ignites hearts to live from a heavenly perspective — not merely informing, but imparting.
+          </p>
+          <a href="#" class="pillar-card__link">Explore teachings →</a>
+        </article>
+
+        <article class="pillar-card reveal" aria-labelledby="pillarPrayer">
+          <p class="pillar-num">02</p>
+          <h3 class="pillar-card__title" id="pillarPrayer">Prayer &amp; Intercession</h3>
+          <p class="pillar-card__body">
+            A house of prayer where encounters with God are the foundation of everything we do. Prayer is not a preparation for the work — it is the work.
+          </p>
+          <a href="#" class="pillar-card__link">Join prayer →</a>
+        </article>
+
+        <article class="pillar-card reveal" aria-labelledby="pillarWorship">
+          <p class="pillar-num">03</p>
+          <h3 class="pillar-card__title" id="pillarWorship">Worship &amp; Music</h3>
+          <p class="pillar-card__body">
+            We pursue worship as a lifestyle, not just an event. Every song is a declaration of heaven's reality — crafted to usher you into his presence.
+          </p>
+          <a href="#music" class="pillar-card__link">Hear the music →</a>
+        </article>
+
+        <article class="pillar-card reveal" aria-labelledby="pillarMission">
+          <p class="pillar-num">04</p>
+          <h3 class="pillar-card__title" id="pillarMission">Community &amp; Mission</h3>
+          <p class="pillar-card__body">
+            We were never designed to pursue heaven alone. Together we build a culture of love, accountability, and faith that reaches beyond our walls.
+          </p>
+          <a href="#community" class="pillar-card__link">Get connected →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       MUSIC SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="music-section section" id="music" aria-labelledby="musicTitle">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Worship</span>
+        <h2 id="musicTitle">Music That Carries <em>Heaven's Sound</em></h2>
+        <div class="divider"></div>
+        <p class="section-sub">Worship crafted to usher you beyond the veil and into the fullness of his presence.</p>
+      </div>
+
+      <div class="music-grid">
+        <article class="music-card reveal" aria-label="Open Doors — worship single">
+          <div class="music-card__cover music-card__cover--1">
+            <div class="music-card__play" role="button" tabindex="0" aria-label="Play Open Doors">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+          <div class="music-card__info">
+            <p class="music-card__type">Single</p>
+            <h3 class="music-card__title">Open Doors</h3>
+            <p class="music-card__artist">United With Heaven</p>
+          </div>
+        </article>
+
+        <article class="music-card reveal" aria-label="Heaven Come Down — live EP">
+          <div class="music-card__cover music-card__cover--2">
+            <div class="music-card__play" role="button" tabindex="0" aria-label="Play Heaven Come Down">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+          <div class="music-card__info">
+            <p class="music-card__type">Live EP</p>
+            <h3 class="music-card__title">Heaven Come Down</h3>
+            <p class="music-card__artist">United With Heaven</p>
+          </div>
+        </article>
+
+        <article class="music-card reveal" aria-label="The Eternal Song — album">
+          <div class="music-card__cover music-card__cover--3">
+            <div class="music-card__play" role="button" tabindex="0" aria-label="Play The Eternal Song">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+          <div class="music-card__info">
+            <p class="music-card__type">Album</p>
+            <h3 class="music-card__title">The Eternal Song</h3>
+            <p class="music-card__artist">United With Heaven</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="music-cta reveal">
+        <a href="#" class="btn btn--outline">View All Music</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       DEVOTIONAL SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="devotional-section section" id="devotional" aria-labelledby="devotionalTitle">
+    <div class="container">
+      <div class="devotional-inner reveal">
+        <div class="devotional-meta">
+          <span class="section-tag">Daily Devotional</span>
+          <time class="devotional-date" datetime="2026-05-16">May 16, 2026</time>
+        </div>
+
+        <h2 class="devotional-title" id="devotionalTitle">
+          Anchored in the <em>Eternal</em>
+        </h2>
+
+        <blockquote class="devotional-scripture">
+          <p>"Set your minds on things above, not on earthly things."</p>
+          <cite>— Colossians 3:2</cite>
+        </blockquote>
+
+        <p class="devotional-body">
+          Heaven is not merely a destination — it is a dimension of reality accessible to you right now, through faith, prayer, and the living word of God. The enemy's greatest strategy is to keep your gaze anchored to the temporal: your circumstances, your limitations, your lack. But God invites you daily into a higher vantage point. Today, make a deliberate act of setting your mind above. Let prayer be the ladder. Let worship be the atmosphere. Watch as he transforms your perspective from the temporary to the eternal, from anxiety to authority, from striving to rest.
+        </p>
+
+        <a href="#" class="btn btn--primary">Read Full Devotional</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BOOKS / RESOURCES
+  ═══════════════════════════════════════════ -->
+  <section class="books-section section" id="books" aria-labelledby="booksTitle">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Resources</span>
+        <h2 id="booksTitle">Books for the <em>Hungry Heart</em></h2>
+        <div class="divider"></div>
+        <p class="section-sub">Curated reading to fuel your pursuit of God and awaken heavenly vision.</p>
+      </div>
+
+      <div class="books-track-wrap">
+        <div class="books-track reveal" role="list">
+          <div class="book-card" role="listitem">
+            <div class="book-card__cover book-card__cover--1"><span class="book-card__cover-title">Seated Above</span></div>
+            <h3 class="book-card__title">Seated Above</h3>
+            <p class="book-card__author">A. Whitmore</p>
+            <a href="#" class="book-card__link">Get the Book →</a>
+          </div>
+          <div class="book-card" role="listitem">
+            <div class="book-card__cover book-card__cover--2"><span class="book-card__cover-title">The Prayer of Fire</span></div>
+            <h3 class="book-card__title">The Prayer of Fire</h3>
+            <p class="book-card__author">J. Harrison</p>
+            <a href="#" class="book-card__link">Get the Book →</a>
+          </div>
+          <div class="book-card" role="listitem">
+            <div class="book-card__cover book-card__cover--3"><span class="book-card__cover-title">Burning Ones</span></div>
+            <h3 class="book-card__title">Burning Ones</h3>
+            <p class="book-card__author">K. Morrison</p>
+            <a href="#" class="book-card__link">Get the Book →</a>
+          </div>
+          <div class="book-card" role="listitem">
+            <div class="book-card__cover book-card__cover--4"><span class="book-card__cover-title">Heaven's Pattern</span></div>
+            <h3 class="book-card__title">Heaven's Pattern</h3>
+            <p class="book-card__author">R. Crawford</p>
+            <a href="#" class="book-card__link">Get the Book →</a>
+          </div>
+          <div class="book-card" role="listitem">
+            <div class="book-card__cover book-card__cover--5"><span class="book-card__cover-title">Face to Face</span></div>
+            <h3 class="book-card__title">Face to Face</h3>
+            <p class="book-card__author">M. Elias</p>
+            <a href="#" class="book-card__link">Get the Book →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="books-nav">
+        <button class="books-prev" aria-label="Previous books">&#8592;</button>
+        <button class="books-next" aria-label="Next books">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       COMMUNITY / NEWSLETTER
+  ═══════════════════════════════════════════ -->
+  <section class="community-section" id="community" aria-labelledby="communityTitle">
+    <div class="container">
+      <div class="community-inner reveal">
+        <span class="section-tag">Community</span>
+        <h2 class="community-title" id="communityTitle">
+          Join a Family That Pursues <em>Heaven Together</em>
+        </h2>
+        <p class="community-sub">
+          Weekly teachings, devotionals, and worship releases — straight to your inbox. No noise. Just presence.
+        </p>
+        <form class="community-form" id="communityForm" novalidate>
+          <label for="emailInput" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="emailInput"
+            class="community-form__input"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          >
+          <button type="submit" class="btn btn--primary">Join the Journey</button>
+        </form>
+        <p class="community-disclaimer">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo" aria-label="United With Heaven home">
+            <span class="nav__logo-icon">✦ </span>United With Heaven
+          </a>
+          <p class="footer__tagline">
+            Hosting the presence of God.<br>Awakening the church. Reaching the world.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Explore</h4>
+          <ul role="list">
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#devotional">Devotional</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Resources</h4>
+          <ul role="list">
+            <li><a href="#books">Books</a></li>
+            <li><a href="#">Podcasts</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Prayer Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Connect</h4>
+          <ul role="list">
+            <li><a href="#community">Community</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Partner With Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 United With Heaven. All rights reserved.</p>
+        <div class="footer__socials" aria-label="Social media links">
+          <a href="#" class="footer__social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" style="fill:#281818"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4" style="fill:#281818"/>
+              <circle cx="17.5" cy="6.5" r="1" style="fill:#281818"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 13.5c2.5-1 5.5-.5 7.5.5" style="fill:none;stroke:#281818;stroke-width:1.5;stroke-linecap:round"/>
+              <path d="M7.5 11c3-1.5 7-1 9 .5" style="fill:none;stroke:#281818;stroke-width:1.5;stroke-linecap:round"/>
+              <path d="M7 8.5c3.5-2 8.5-1.5 10.5 1" style="fill:none;stroke:#281818;stroke-width:1.5;stroke-linecap:round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+    }
+    .section { padding-block: var(--section-pad); }
+    .section-header { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+  </style>
+
+  <script src="js/animations.js" defer></script>
+  <script src="js/parallax.js"   defer></script>
+  <script src="js/main.js"       defer></script>
+</body>
+</html>
